@@ -1,8 +1,8 @@
 validate.io-array
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url] [![Github Issues][github-issues-image]][github-issues-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-Validates if a value is an array.
+> Validates if a value is an array.
 
 
 ## Installation
@@ -19,14 +19,17 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'validate.io-array' );
+var isArray = require( 'validate.io-array' );
+
+console.log( isArray( [] ) );
+// Returns true
+
+console.log( isArray( {} ) );
+// Returns false
+```
 
 
 ## Examples
-
-``` javascript
-var lib = require( 'validate.io-array' );
-```
 
 To run the example code from the top-level application directory,
 
