@@ -1,6 +1,6 @@
 {
   "name": "validate.io-array",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Validates if a value is an array.",
   "author": {
     "name": "Athan Reines",
