@@ -1,17 +1,9 @@
+'use strict';
+
 var isArray = require( './../lib' );
 
-// Positive validation:
 console.log( isArray( [] ) );
+// returns true
 
-/**
-* Returns:
-*	true
-*/
-
-// Negative validation:
 console.log( isArray( {} ) );
-
-/**
-* Returns:
-*	false
-*/
+// returns false
