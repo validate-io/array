@@ -30,7 +30,9 @@
     "valid",
     "array",
     "is",
-    "isarray"
+    "isarray",
+    "type",
+    "check"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/array/issues"
