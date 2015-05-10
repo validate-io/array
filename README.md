@@ -37,6 +37,8 @@ var bool = isArray( value );
 
 
 ``` javascript
+var isArray = require( 'validate.io-array' );
+
 console.log( isArray( [ 1, 2, 3, 4 ] ) );
 // returns true
 
@@ -88,7 +90,7 @@ $ make view-cov
 
 ## Copyright
 
-Copyright &copy; 2014. Athan Reines.
+Copyright &copy; 2014-2015. Athan Reines.
 
 
 [npm-image]: http://img.shields.io/npm/v/validate.io-array.svg

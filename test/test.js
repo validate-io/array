@@ -6,6 +6,9 @@
 var // Expectation library:
 	chai = require( 'chai' ),
 
+	// Proxy module dependencies:
+	proxyquire = require( 'proxyquire' ),
+
 	// Module to be tested:
 	isArray = require( './../lib' );
 
@@ -46,12 +49,29 @@ describe( 'validate.io-array', function tests() {
 	});
 
 	it( 'should include a polyfill for Array.isArray', function test() {
-		var fcn = Array.isArray;
+		var fcn = Array.isArray,
+			isArray,
+			values;
 
 		Array.isArray = undefined;
 
+		isArray = proxyquire( './../lib', {} );
+
+		values = [
+			5,
+			{},
+			true,
+			'5',
+			null,
+			NaN,
+			function(){},
+			undefined
+		];
+
+		for ( var i = 0; i < values.length; i++ ) {
+			assert.ok( !isArray( values[i] ) );
+		}
 		assert.ok( isArray( [] ) );
-		assert.notOk( isArray( {} ) );
 
 		Array.isArray = fcn;
 	});
