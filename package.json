@@ -47,10 +47,5 @@
     "mocha": "1.x.x",
     "proxyquire": "^1.4.0"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ]
+  "license": "MIT"
 }
