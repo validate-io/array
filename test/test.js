@@ -29,6 +29,7 @@ describe( 'validate.io-array', function tests() {
 
 	it( 'should positively validate', function test() {
 		assert.ok( isArray( [] ) );
+		assert.ok( isArray( new Array( 10 ) ) );
 	});
 
 	it( 'should negatively validate', function test() {
